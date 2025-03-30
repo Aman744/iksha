@@ -1,0 +1,28 @@
+.w-100 {
+    width: 100%;
+    overflow: hidden;
+}
+.empty-30 {
+    margin: 0px 0px 36px 0px;
+}
+h2 {
+   font-weight: bold;
+}
+h4 {
+  font-weight: 500;
+}
+ul {
+    color: #606060;
+}
+.orange-bg{
+    background-color: #f78f2e;
+    padding: 20px 0px;
+}
+.line-div{
+    display: flex;
+    justify-content: center;
+}
+.line{
+    border: 0.2px solid gray;
+    width: 80%;
+}
