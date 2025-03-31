@@ -218,23 +218,50 @@
     9. Accordian
   --------------------------------------------------------------*/
   
+    // function accordianSetup() {
+
+    //     var $this = $(this);
+    //     $( ".accordian-head" ).append( "<span class='accordian-toggle'></span>" );
+    //     $('.single-accordian').filter(':nth-child(n+2)').children('.accordian-body').hide();
+    //     $('.single-accordian:first-child').children('.accordian-head').addClass('active');
+    //     $('.accordian-head').on('click', function() {
+    //         $(this).parent('.single-accordian').siblings().children('.accordian-body').slideUp();
+    //         $(this).siblings().slideToggle();
+    //         /* Accordian Active Class */
+    //         $(this).toggleClass('active');
+    //         $(this).parent('.single-accordian').siblings().children('.accordian-head').removeClass('active');
+    //     });
+
+    // }
+
     function accordianSetup() {
-
-        var $this = $(this);
-        $( ".accordian-head" ).append( "<span class='accordian-toggle'></span>" );
-        $('.single-accordian').filter(':nth-child(n+2)').children('.accordian-body').hide();
-        $('.single-accordian:first-child').children('.accordian-head').addClass('active');
-        $('.accordian-head').on('click', function() {
-            $(this).parent('.single-accordian').siblings().children('.accordian-body').slideUp();
-            $(this).siblings().slideToggle();
-            /* Accordian Active Class */
-            $(this).toggleClass('active');
-            $(this).parent('.single-accordian').siblings().children('.accordian-head').removeClass('active');
-        });
-
-    }
-
-
+      var $this = $(this);
+      
+      // Add the toggle button to each accordion header
+      $(".accordian-head").append("<span class='accordian-toggle'></span>");
+      
+      // Collapse all accordion bodies by default
+      $('.single-accordian').children('.accordian-body').hide();
+      
+      // Handle click events on accordion headers
+      $('.accordian-head').on('click', function() {
+          var $currentBody = $(this).siblings('.accordian-body');
+          
+          // Slide up all other accordion bodies
+          $(this).parent('.single-accordian').siblings().children('.accordian-body').slideUp();
+          
+          // Toggle the clicked accordion's body
+          $currentBody.stop(true, true).slideToggle();
+          
+          // Toggle the active class on the header
+          $(this).toggleClass('active');
+          
+          // Remove active class from other headers
+          $(this).parent('.single-accordian').siblings().children('.accordian-head').removeClass('active');
+      });
+  }
+  
+  
     /*--------------------------------------------------------------
     10. Portfolio
     --------------------------------------------------------------*/

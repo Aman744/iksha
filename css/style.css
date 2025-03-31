@@ -446,7 +446,12 @@ html {
 .black-bg {
     /* background-color: #0C0C0C; */
     color: #fff;
-    background-image:url(../img/bg-image-2.jpg)
+    background-image:url(../img/bg-image-2.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
 }
 .t-btn {
     display: inline-block;
@@ -596,6 +601,7 @@ html {
 9. Site Header
 --------------------------------------------------------------*/
 .site-header {
+    border-bottom: 1px solid #d3d3d3;
     width: 100%;
     position: fixed;
     top: 0;
