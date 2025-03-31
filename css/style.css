@@ -1036,7 +1036,7 @@ html {
 }
 .section-header p {
     margin: 0;
-    color: #7F7F7F;
+    color: #000000;
     font-size: 15px;
     line-height: 21px;
     font-weight: 400;
@@ -1072,14 +1072,14 @@ html {
     color: #000000;
 }
 .accordian-head i {
-    color: #404040;
+    color: #000000;
     margin-right: 18px;
 }
 .accordian-head.active i {
 	color: #fff;
 }
 .single-accordian .accordian-body {
-    color: #3F3F3F;
+    color: #000000;
     line-height: 22px;
     font-size: 16px;
     padding: 15px 20px 10px;
