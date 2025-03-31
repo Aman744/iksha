@@ -5,6 +5,11 @@
 .empty-30 {
     margin: 0px 0px 36px 0px;
 }
+a {
+    font-size: 15px;
+    color: #f4943c;
+    background-color: transparent;
+}
 h2 {
    font-weight: bold;
 }
@@ -13,6 +18,13 @@ h4 {
 }
 ul {
     color: #606060;
+    list-style: disc;
+    
+}
+li {
+    color: black;
+    font-size: 18px;
+    line-height: 2;
 }
 .orange-bg{
     background-color: #f78f2e;
@@ -25,4 +37,13 @@ ul {
 .line{
     border: 0.2px solid gray;
     width: 80%;
+}
+p {
+    color: #000000;
+    font-weight: 400;
+    font-size: 18px;
+}
+b, strong {
+    font-weight: bold;
+    color: black;
 }
