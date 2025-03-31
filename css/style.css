@@ -861,7 +861,7 @@ html {
 10. Home Page
 --------------------------------------------------------------*/
 .hero {
-    min-height: 100vh;
+    min-height: 50vh;
     position: relative;
 }
 .hero-slider {
@@ -884,7 +884,7 @@ html {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 100vh;
+    min-height: 50vh;
     width: 100%;
     padding: 150px 0 80px;
     position: relative;
@@ -1153,7 +1153,7 @@ html {
 }
 /*=== Donate ===*/
 .donate {
-  background-color: #437eff;
+  background-color: #2D639C;
     /* background-image: url(../img/down-bg.jpg);
     background-position: center center;
     position: relative;
@@ -1609,9 +1609,9 @@ html {
 /*=== Footer ===*/
 .copy-right {
     color: #fffafa;
-    font-size: 20px;
+    font-size: 15px;
     font-weight: 400;
-    /* margin-bottom: 18px; */
+    margin-bottom: 18px;
 }
 .social-btn {
     display: flex;
