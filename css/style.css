@@ -563,7 +563,7 @@ html {
 --------------------------------------------------------------*/
 .scrollup {
     position: fixed;
-    background-color: rgb(246 145 52);
+    background-color: #f78f2e;
     bottom: -60px;
     right: 25px;
     color: #fff;
